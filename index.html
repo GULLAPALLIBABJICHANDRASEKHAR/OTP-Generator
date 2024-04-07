@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Heading -->
+        <div class="header">
+            <h1>OTP Generator & Validation</h1>
+        </div>
+
+        <!-- OTP Genration Area -->
+        <div class="otpgenerate">
+            <h2>OTP Generator</h2>
+            <h3>Your OTP is: <span class="otp-place"></span></h3>
+            <button onclick="otp_text()">Generate OTP</button>
+        </div>
+
+        <!-- OTP Validation Area -->
+        <div class="otpvalidate">
+            <h2>OTP Validation</h2>
+            <h3>Enter the OTP</h3>
+            <input type="numeric" id="otp-text" required>
+            <p id="validation-message"></p>
+            <button onclick="validate()">Validate</button>
+        </div>
+    </div>
+    
+    <script src="otpgenerator.js"></script>
+</body>
+</html>
